@@ -1,0 +1,46 @@
+.container {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding: 5rem 10rem;
+}
+.container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.container input {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+}
+.container input::placeholder {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    padding: 15rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .container p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .container input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+  }
+}

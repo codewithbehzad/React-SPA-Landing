@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  box-shadow: 0 1.3rem 3.1rem -1.7rem rgb(0 0 0 / 20%);
+}
+
+.navList {
+  display: flex;
+}
+
+.navItems > a {
+  margin-left: 2.5rem;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.navItems > a:hover {
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.btnInvite {
+  padding: 1rem 3rem;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.6rem;
+}
+
+.navbarItems,
+.btnInvite {
+  display: none;
+}
+
+/* TOGGLER */
+.nav__toggler {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: all 0.4s ease-out;
+}
+
+.nav.nav__expanded .bar-one {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  margin: 8px 0;
+}
+
+.nav.nav__expanded .bar-two {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.nav.nav__expanded .bar-three {
+  transform: rotate(45deg) translate(-8px, -8px);
+  margin: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .navbarItems,
+  .btnInvite {
+    display: flex;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    box-shadow: 0 1.3rem 3.1rem -1.7rem rgb(0 0 0 / 20%);
+  }
+}

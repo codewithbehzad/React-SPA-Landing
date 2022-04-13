@@ -1,0 +1,7 @@
+.productContainer {
+  margin: 5rem 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
